@@ -97,8 +97,8 @@ def node_fn(context,*args, **kwargs):
 def generate_launch_description():
 
     return  LaunchDescription([
-        DeclareLaunchArgument('serverIP', default_value="192.168.0.100"),
-        DeclareLaunchArgument('clientIP', default_value="192.168.0.103"),
+        DeclareLaunchArgument('serverIP', default_value="10.240.20.147"), #Motive
+        DeclareLaunchArgument('clientIP', default_value="10.240.20.111"), #ROS
         DeclareLaunchArgument('serverType', default_value="multicast"), # multicast/unicast
         DeclareLaunchArgument('multicastAddress', default_value="239.255.42.99"),
         DeclareLaunchArgument('serverCommandPort', default_value="1510"),
